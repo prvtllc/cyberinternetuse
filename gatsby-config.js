@@ -56,6 +56,15 @@ module.exports = {
             },
           },
           `gatsby-remark-katex`,
+          
+          {
+            resolve: `gatsby-plugin-sharp`,
+            options: {
+              useMozJpeg: false,
+              stripMetadata: true,
+              defaultQuality: 75,
+            },
+          },
 
           {
             resolve: `gatsby-remark-images`,
